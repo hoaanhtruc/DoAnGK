@@ -29,5 +29,7 @@ namespace WebOnline.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<WebOnlineConnection.SanPham> SanPhams { get; set; }
     }
 }

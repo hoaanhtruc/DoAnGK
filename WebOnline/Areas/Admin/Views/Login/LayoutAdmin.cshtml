@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Bootstrap Admin Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Areas/Admin/Content/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="~/Areas/Admin/Content/css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="~/Areas/Admin/Content/css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="~/Areas/Admin/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Eshop Admin</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading">
+                                            <strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading">
+                                            <strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading">
+                                            <strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                    </li>
+                    <li>
+                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="#">Dropdown Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Dropdown Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                    </li>
+                    <li>
+                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+                @RenderBody()
+                <!-- Page Heading -->
+                @*<div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Dashboard <small>Statistics Overview</small>
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <i class="fa fa-dashboard"></i> Dashboard
+                            </li>
+                        </ol>
+                    </div>
+                </div>*@
+                <!-- /.row -->
+
+                @*<div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-info alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <i class="fa fa-info-circle"></i>  <strong>Like SB Admin?</strong> Try out <a href="http://startbootstrap.com/template-overviews/sb-admin-2" class="alert-link">SB Admin 2</a> for additional features!
+                        </div>
+                    </div>
+                </div>*@
+                <!-- /.row -->
+
+                @*<div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-comments fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">26</div>
+                                        <div>New Comments!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-tasks fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">12</div>
+                                        <div>New Tasks!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-shopping-cart fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">124</div>
+                                        <div>New Orders!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-support fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">13</div>
+                                        <div>Support Tickets!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>*@
+                <!-- /.row -->
+
+                @*<div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Area Chart</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-area-chart" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                    <svg height="347" version="1.1" width="575" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with RaphaÃ«l 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="50.5" y="313" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#aaaaaa" d="M63,313H550" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="50.5" y="241" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7,500</tspan></text><path fill="none" stroke="#aaaaaa" d="M63,241H550" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="50.5" y="169" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M63,169H550" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="50.5" y="97.00000000000003" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4.000000000000028" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">22,500</tspan></text><path fill="none" stroke="#aaaaaa" d="M63,97.00000000000003H550" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="50.5" y="25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M63,25H550" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="460.05589307411907" y="325.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan></text><text x="244.07168894289185" y="325.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2011</tspan></text><path fill="#7cb47c" stroke="none" d="M63,261.9952C76.60996354799514,256.7152,103.82989064398542,245.758,117.43985419198056,240.8752C131.0498177399757,235.9924,158.26974483596598,229.61712786885246,171.87970838396112,222.93280000000001C185.341737545565,216.32112786885247,212.26579586877278,189.66403977900552,225.72782503037666,187.6912C239.04191980558932,185.74003977900554,265.67010935601456,205.80194285714288,278.9842041312272,207.23680000000002C292.5941676792223,208.70354285714288,319.81409477521265,198.32080000000002,333.42405832320776,199.29760000000002C347.0340218712029,200.2744,374.2539489671932,232.39063606557377,387.86391251518836,215.0512C401.32594167679224,197.90023606557378,428.25,69.70240000000001,441.7120291616039,61.33600000000001C455.17405832320776,52.969600000000014,482.0981166464156,135.85260327868852,495.56014580801946,148.12C509.17010935601456,160.52220327868852,536.3900364520049,157.04080000000002,550,160.01440000000002L550,313L63,313Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#4da74d" d="M63,261.9952C76.60996354799514,256.7152,103.82989064398542,245.758,117.43985419198056,240.8752C131.0498177399757,235.9924,158.26974483596598,229.61712786885246,171.87970838396112,222.93280000000001C185.341737545565,216.32112786885247,212.26579586877278,189.66403977900552,225.72782503037666,187.6912C239.04191980558932,185.74003977900554,265.67010935601456,205.80194285714288,278.9842041312272,207.23680000000002C292.5941676792223,208.70354285714288,319.81409477521265,198.32080000000002,333.42405832320776,199.29760000000002C347.0340218712029,200.2744,374.2539489671932,232.39063606557377,387.86391251518836,215.0512C401.32594167679224,197.90023606557378,428.25,69.70240000000001,441.7120291616039,61.33600000000001C455.17405832320776,52.969600000000014,482.0981166464156,135.85260327868852,495.56014580801946,148.12C509.17010935601456,160.52220327868852,536.3900364520049,157.04080000000002,550,160.01440000000002" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="63" cy="261.9952" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="117.43985419198056" cy="240.8752" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="171.87970838396112" cy="222.93280000000001" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="225.72782503037666" cy="187.6912" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="278.9842041312272" cy="207.23680000000002" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="333.42405832320776" cy="199.29760000000002" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="387.86391251518836" cy="215.0512" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="441.7120291616039" cy="61.33600000000001" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="495.56014580801946" cy="148.12" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="550" cy="160.01440000000002" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#a7b3bc" stroke="none" d="M63,287.4064C76.60996354799514,281.632,103.82989064398542,269.3668,117.43985419198056,264.3088C131.0498177399757,259.2508,158.26974483596598,249.70782950819674,171.87970838396112,246.94240000000002C185.341737545565,244.20702950819674,212.26579586877278,244.5294187845304,225.72782503037666,242.30560000000003C239.04191980558932,240.1062187845304,265.67010935601456,232.33412747252746,278.9842041312272,229.2496C292.5941676792223,226.09652747252747,319.81409477521265,217.22440000000003,333.42405832320776,217.35520000000002C347.0340218712029,217.48600000000002,374.2539489671932,243.66103606557377,387.86391251518836,230.296C401.32594167679224,217.07623606557377,428.25,118.85440000000001,441.7120291616039,111.01600000000002C455.17405832320776,103.17760000000001,482.0981166464156,159.3600131147541,495.56014580801946,167.58880000000002C509.17010935601456,175.9080131147541,536.3900364520049,174.8032,550,177.208L550,313L63,313Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#7a92a3" d="M63,287.4064C76.60996354799514,281.632,103.82989064398542,269.3668,117.43985419198056,264.3088C131.0498177399757,259.2508,158.26974483596598,249.70782950819674,171.87970838396112,246.94240000000002C185.341737545565,244.20702950819674,212.26579586877278,244.5294187845304,225.72782503037666,242.30560000000003C239.04191980558932,240.1062187845304,265.67010935601456,232.33412747252746,278.9842041312272,229.2496C292.5941676792223,226.09652747252747,319.81409477521265,217.22440000000003,333.42405832320776,217.35520000000002C347.0340218712029,217.48600000000002,374.2539489671932,243.66103606557377,387.86391251518836,230.296C401.32594167679224,217.07623606557377,428.25,118.85440000000001,441.7120291616039,111.01600000000002C455.17405832320776,103.17760000000001,482.0981166464156,159.3600131147541,495.56014580801946,167.58880000000002C509.17010935601456,175.9080131147541,536.3900364520049,174.8032,550,177.208" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="63" cy="287.4064" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="117.43985419198056" cy="264.3088" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="171.87970838396112" cy="246.94240000000002" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="225.72782503037666" cy="242.30560000000003" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="278.9842041312272" cy="229.2496" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="333.42405832320776" cy="217.35520000000002" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="387.86391251518836" cy="230.296" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="441.7120291616039" cy="111.01600000000002" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="495.56014580801946" cy="167.58880000000002" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="550" cy="177.208" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#2577b5" stroke="none" d="M63,287.4064C76.60996354799514,287.1376,103.82989064398542,289.0264,117.43985419198056,286.3312C131.0498177399757,283.636,158.26974483596598,267.03808524590164,171.87970838396112,265.8448C185.341737545565,264.66448524590163,212.26579586877278,279.1269834254143,225.72782503037666,276.8368C239.04191980558932,274.57178342541437,265.67010935601456,249.88250549450552,278.9842041312272,247.62400000000002C292.5941676792223,245.3153054945055,319.81409477521265,256.18,333.42405832320776,258.568C347.0340218712029,260.95599999999996,374.2539489671932,278.0732590163935,387.86391251518836,266.728C401.32594167679224,255.50605901639346,428.25,175.33960000000002,441.7120291616039,168.2992C455.17405832320776,161.2588,482.0981166464156,202.47914754098363,495.56014580801946,210.40480000000002C509.17010935601456,218.41754754098363,536.3900364520049,226.6408,550,232.0528L550,313L63,313Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#0b62a4" d="M63,287.4064C76.60996354799514,287.1376,103.82989064398542,289.0264,117.43985419198056,286.3312C131.0498177399757,283.636,158.26974483596598,267.03808524590164,171.87970838396112,265.8448C185.341737545565,264.66448524590163,212.26579586877278,279.1269834254143,225.72782503037666,276.8368C239.04191980558932,274.57178342541437,265.67010935601456,249.88250549450552,278.9842041312272,247.62400000000002C292.5941676792223,245.3153054945055,319.81409477521265,256.18,333.42405832320776,258.568C347.0340218712029,260.95599999999996,374.2539489671932,278.0732590163935,387.86391251518836,266.728C401.32594167679224,255.50605901639346,428.25,175.33960000000002,441.7120291616039,168.2992C455.17405832320776,161.2588,482.0981166464156,202.47914754098363,495.56014580801946,210.40480000000002C509.17010935601456,218.41754754098363,536.3900364520049,226.6408,550,232.0528" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="63" cy="287.4064" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="117.43985419198056" cy="286.3312" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="171.87970838396112" cy="265.8448" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="225.72782503037666" cy="276.8368" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="278.9842041312272" cy="247.62400000000002" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="333.42405832320776" cy="258.568" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="387.86391251518836" cy="266.728" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="441.7120291616039" cy="168.2992" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="495.56014580801946" cy="210.40480000000002" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="550" cy="232.0528" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="left: 535.742px; top: 150px; display: none;">
+                                        <div class="morris-hover-row-label">2011 Q2</div><div class="morris-hover-point" style="color: #0b62a4">
+                                            iPhone:
+                                            5,670
+                                        </div><div class="morris-hover-point" style="color: #7A92A3">
+                                            iPad:
+                                            4,293
+                                        </div><div class="morris-hover-point" style="color: #4da74d">
+                                            iPod Touch:
+                                            1,881
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+                <!-- /.row -->
+
+                @*<div class="row">
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Donut Chart</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-donut-chart"><svg height="347" version="1.1" width="575" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with RaphaÃ«l 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#0b62a4" d="M287.5,286.6666666666667A110.66666666666667,110.66666666666667,0,0,0,391.98523596313163,212.46843260739092" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#0b62a4" stroke="#ffffff" d="M287.5,289.6666666666667A113.66666666666667,113.66666666666667,0,0,0,394.8176670585177,213.45703469614548L439.5071354523873,229.05497876316207A161,161,0,0,1,287.5,337Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#3980b5" d="M391.98523596313163,212.46843260739092A110.66666666666667,110.66666666666667,0,0,0,188.2245062356979,127.09716318080183" stroke-width="2" opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"></path><path fill="#3980b5" stroke="#ffffff" d="M394.8176670585177,213.45703469614548A113.66666666666667,113.66666666666667,0,0,0,185.53330309148487,125.77148386943801L138.58675935354682,102.64574477120273A166,166,0,0,1,444.2278539446975,230.70264891108636Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#679dc6" d="M188.2245062356979,127.09716318080183A110.66666666666667,110.66666666666667,0,0,0,287.46523304187207,286.66666120548564" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#679dc6" stroke="#ffffff" d="M185.53330309148487,125.77148386943801A113.66666666666667,113.66666666666667,0,0,0,287.4642905640915,289.66666105744156L287.44942035910907,336.9999920549685A161,161,0,0,1,143.07209792723518,104.85521029014241Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="287.5" y="166" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: 800; font-stretch: normal; font-size: 15px; line-height: normal; font-family: Arial;" font-size="15px" font-weight="800" transform="matrix(1.7138,0,0,1.7138,-205.2058,-126.3388)" stroke-width="0.5835058985943774"><tspan dy="6" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">In-Store Sales</tspan></text><text x="287.5" y="186" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; line-height: normal; font-family: Arial;" font-size="14px" transform="matrix(2.3056,0,0,2.3056,-375.3472,-232.3889)" stroke-width="0.4337349397590361"><tspan dy="5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30</tspan></text></svg></div>
+                                <div class="text-right">
+                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Tasks Panel</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">just now</span>
+                                        <i class="fa fa-fw fa-calendar"></i> Calendar updated
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">4 minutes ago</span>
+                                        <i class="fa fa-fw fa-comment"></i> Commented on a post
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">23 minutes ago</span>
+                                        <i class="fa fa-fw fa-truck"></i> Order 392 shipped
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">46 minutes ago</span>
+                                        <i class="fa fa-fw fa-money"></i> Invoice 653 has been paid
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">1 hour ago</span>
+                                        <i class="fa fa-fw fa-user"></i> A new user has been added
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">2 hours ago</span>
+                                        <i class="fa fa-fw fa-check"></i> Completed task: "pick up dry cleaning"
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">yesterday</span>
+                                        <i class="fa fa-fw fa-globe"></i> Saved the world
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <span class="badge">two days ago</span>
+                                        <i class="fa fa-fw fa-check"></i> Completed task: "fix error on sales page"
+                                    </a>
+                                </div>
+                                <div class="text-right">
+                                    <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions Panel</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Order #</th>
+                                                <th>Order Date</th>
+                                                <th>Order Time</th>
+                                                <th>Amount (USD)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>3326</td>
+                                                <td>10/21/2013</td>
+                                                <td>3:29 PM</td>
+                                                <td>$321.33</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3325</td>
+                                                <td>10/21/2013</td>
+                                                <td>3:20 PM</td>
+                                                <td>$234.34</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3324</td>
+                                                <td>10/21/2013</td>
+                                                <td>3:03 PM</td>
+                                                <td>$724.17</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3323</td>
+                                                <td>10/21/2013</td>
+                                                <td>3:00 PM</td>
+                                                <td>$23.71</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3322</td>
+                                                <td>10/21/2013</td>
+                                                <td>2:49 PM</td>
+                                                <td>$8345.23</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3321</td>
+                                                <td>10/21/2013</td>
+                                                <td>2:23 PM</td>
+                                                <td>$245.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3320</td>
+                                                <td>10/21/2013</td>
+                                                <td>2:15 PM</td>
+                                                <td>$5663.54</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3319</td>
+                                                <td>10/21/2013</td>
+                                                <td>2:13 PM</td>
+                                                <td>$943.45</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-right">
+                                    <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="~/Areas/Admin/Content/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Areas/Admin/Content/js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="~/Areas/Admin/Content/js/plugins/morris/raphael.min.js"></script>
+    <script src="~/Areas/Admin/Content/js/plugins/morris/morris.min.js"></script>
+    <script src="~/Areas/Admin/Content/js/plugins/morris/morris-data.js"></script>
+</body>
+</html>

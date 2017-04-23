@@ -1,29 +1,7 @@
-﻿@model IEnumerable<WebOnlineConnection.SanPham>
+﻿@using WebOnline.Models;
+@model IEnumerable<WebOnlineConnection.SanPham>
 @{
-    Layout = "~/Views/Layout/LayoutNguoiDung.cshtml";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
     ViewBag.Title = "Home Page";
 }
 
-@foreach (var item in Model)
-{
-    <div class="col-sm-4">
-        <div class="product-image-wrapper">
-            <div class="single-products">
-                <div class="productinfo text-center">
-                    <img src="~/Content/images/shop/product11.jpg" style="width:242px;height:200px" alt="">
-                    <h5> @Html.ActionLink(item.Ten, "Details", new { ID = item.ID })</h5>
-                    <p>@item.Gia</p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                </div>
-                <div class="product-overlay">
-                    <div class="overlay-content">
-                        <h2>  Giá: @item.Gia</h2>
-                        <p> Lượt Xem:@item.SoLuotXem</p>
-                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-
-            }
