@@ -1,4 +1,4 @@
-﻿@model FashionShopConection.SanPham
+﻿@model  Fashion_Shop.Areas.Admin.Models.SP
 
 @{
     ViewBag.Title = "Create";
@@ -7,7 +7,8 @@
 
 <h2>Create</h2>
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm(Html.BeginForm("Create", "SanPham", FormMethod.Post,
+                            new { enctype = "multipart/form-data" }))) 
 {
     @Html.AntiForgeryToken()
     
@@ -15,13 +16,7 @@
         <h4>Thêm Sản Phẩm</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.idSP, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.idSP, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.idSP, "", new { @class = "text-danger" })
-            </div>
-        </div>
+        
 
         <div class="form-group">
             @Html.LabelFor(model => model.TenSP, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -50,15 +45,14 @@
         <div class="form-group">
             @Html.LabelFor(model => model.HinhAnh, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.HinhAnh, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.HinhAnh, "", new { @class = "text-danger" })
+                <input type="file" name="file" id="file" style="width: 100%;" />
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.MaLoai, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.MaLoai, new { htmlAttributes = new { @class = "form-control" } })
+                 @Html.DropDownListFor(model => model.MaLoai, new SelectList(ViewBag.Loai, "idLoai", "TenLoai"), new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.MaLoai, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -66,7 +60,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.MaNSX, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.MaNSX, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.DropDownListFor(model => model.MaNSX, new SelectList(ViewBag.NhaSX, "idNSX", "TenNSX"), new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.MaNSX, "", new { @class = "text-danger" })
             </div>
         </div>

@@ -10,7 +10,7 @@ namespace Fashion_Shop.Areas.Admin.Models
     public class SP
     {
         [Display(Name = "Mã SP")]
-        public int idNSX { get; set; }
+        public int idSP { get; set; }
 
         [Display(Name = "Tên SP")]
         [Required(ErrorMessage = "Nhập tên sản phẩm!")]
@@ -19,10 +19,13 @@ namespace Fashion_Shop.Areas.Admin.Models
         
         [Display(Name = "Giá SP")]
         [Required(ErrorMessage = "Nhập tên sản phẩm!")]
-        public string GiaSP { get; set; }
+        public int GiaSP { get; set; }
 
         [Display(Name ="Mã Loại")]
-        public string MaLoai { get; set; }
+        public int MaLoai { get; set; }
+
+        [Display(Name = "Mã NSX")]
+        public int MaNSX { get; set; }
 
         [Display(Name ="Hình Ảnh")]
         [AllowHtml]

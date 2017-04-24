@@ -210,6 +210,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\AdminHomeController.cs" />
     <Compile Include="Areas\Admin\LoaiSPController.cs" />
+    <Compile Include="Areas\Admin\Models\LoaiSP.cs" />
     <Compile Include="Areas\Admin\Models\NhaSX.cs" />
     <Compile Include="Areas\Admin\Models\SP.cs" />
     <Compile Include="Areas\Admin\NhaSXController.cs" />
@@ -263,11 +264,16 @@
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_Layout0.cshtml" />
     <Content Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\NhaSX\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\NhaSX\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminHome\Create.cshtml" />
     <Content Include="Areas\Admin\Views\NhaSX\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\SanPham\Create.cshtml" />
     <Content Include="Areas\Admin\Views\SanPham\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\NhaSX\index.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\NhaSX\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\LoaiSP\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\LoaiSP\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\LoaiSP\Index.cshtml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -303,7 +309,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Areas\Admin\Views\LoaiSP\" />
     <Folder Include="Assets\Admin\css\" />
     <Folder Include="Assets\Admin\font-awesome\" />
     <Folder Include="Assets\Admin\fonts\" />

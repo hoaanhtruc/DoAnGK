@@ -15,7 +15,7 @@ namespace MobiShopBUS.Models.BUS
             var db = new FashionShopConectionDB();
             return db.Query<LoaiSanPham>("Select * from LoaiSanPham ORDER BY TenLoai").ToList();
         }
-        public static LoaiSanPham LoadLDSLoaiSP(int id)
+        public static LoaiSanPham LoadLoaiSP(int id)
         {
             var db = new FashionShopConectionDB();
             return db.SingleOrDefault<LoaiSanPham>("SELECT * FROM LoaiSanPham Where idLoai=@0", id);
