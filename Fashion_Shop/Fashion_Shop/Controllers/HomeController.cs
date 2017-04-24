@@ -12,7 +12,7 @@ namespace Fashion_Shop.Controllers
         public ActionResult Index()
         {
 
-            return View(SanPhamBUS.Top6());
+            return View(SPBUS.LoadTop10SP());
         }
 
         public ActionResult About()

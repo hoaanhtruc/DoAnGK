@@ -15,7 +15,7 @@ namespace Fashion_Shop.Controllers
         // GET: SanPham
         public ActionResult Index(int? page)
         {
-            var LstDS = SanPhamBUS.DanhSach();
+            var LstDS = SPBUS.LoadDSSP();
             int pageSize = 12;
             int pageNumber = (page ?? 1);
             return View(LstDS.ToPagedList(pageNumber, pageSize));
@@ -23,7 +23,7 @@ namespace Fashion_Shop.Controllers
         //Load Sản phẩm theo loại
         public ActionResult SPLoai(int id,int? page)
         {
-            var LstDS = SanPhamBUS.DanhSachLoai(id);
+            var LstDS = SPBUS.LoadDSLoaiSP(id);
             int pageSize = 6;
             int pageNumber = (page ?? 1);
             return View(LstDS.ToPagedList(pageNumber, pageSize));
@@ -31,7 +31,7 @@ namespace Fashion_Shop.Controllers
         public ActionResult Detail(int id)
         {
             
-            return View(ChiTietSanPhamBUS.LoadSP(id));
+            return View(ChiTietSPBUS.LoadSP(id));
         }
     }
 }

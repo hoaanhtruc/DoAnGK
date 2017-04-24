@@ -14,7 +14,7 @@ namespace Fashion_Shop.Controllers
         public ActionResult Index()
         {
 
-            return View(LoaiSanPhamBUS.DanhSach());
+            return View(LoaiSPBUS.LoadDSLoaiSP());
         }
    
     }

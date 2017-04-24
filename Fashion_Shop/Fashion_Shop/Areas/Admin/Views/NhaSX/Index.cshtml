@@ -1,0 +1,58 @@
+﻿@model List<FashionShopConection.NhaSanXuat>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout0.cshtml";
+}
+
+
+
+        <h2>Index</h2>
+
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                   okla
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ElementAt(0).TenNSX)
+                </th>
+                <th>
+                   Số điện thoại
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ElementAt(0).DiaChi)
+                </th>
+
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.idNSX)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenNSX)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SDT)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DiaChi)
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.idNSX }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.idNSX }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.idNSX })
+                    </td>
+                </tr>
+            }
+
+        </table>
+
