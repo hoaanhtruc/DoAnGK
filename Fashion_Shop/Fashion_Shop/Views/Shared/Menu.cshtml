@@ -1,0 +1,43 @@
+﻿
+<div class="panel-group category-products" id="accordian">
+    <!--category-productsr-->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordian" href="@Url.Action("index","Home")">
+                    <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                    Trang chủ
+                </a>
+            </h4>
+        </div>
+        <div id="sportswear" class="panel-collapse collapse">
+            <div class="panel-body">
+                <ul>
+                    <li><a href="#">Sản Phẩm </a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordian" href="#mens">
+                    <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                    Loại Sản phẩm
+                </a>
+            </h4>
+        </div>
+        <div id="mens" class="panel-collapse collapse">
+            <div class="panel-body">
+                <ul>
+                    @Html.Action("index","DanhSach")
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
