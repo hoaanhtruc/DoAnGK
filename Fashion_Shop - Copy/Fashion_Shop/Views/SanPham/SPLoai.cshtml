@@ -1,0 +1,56 @@
+﻿@model PagedList.IPagedList<FashionShopConection.SanPham>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "SPLoai";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="col-sm-9 padding-right">
+    <div class="features_items">
+        <!--features_items-->
+        <h2 class="title text-center">Danh Sach Sản Phẩm</h2>
+
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-4">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <div class="productinfo text-center">
+                            <img class="fd" src="@item.HinhAnh" alt="" />
+                            <h2>@item.GiaSP</h2>
+                            <p>@item.TenSP</p>
+                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                        </div>
+                        <div class="product-overlay">
+                            <div class="overlay-content">
+                                <h2>@item.GiaSP</h2>
+                                <p>@item.TenSP</p>
+                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose">
+                        <ul class="nav nav-pills nav-justified">
+                            <li><a href="@Url.Action("Detail","SanPham",new { id = item.idSP})"><i class="fa fa-plus-square"></i>Xem chi tiết</a></li>
+                            <li><a href=""><i class="fa fa-plus-square"></i>Đánh giá</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+        <ul class="pagination">
+
+            @Html.PagedListPager(Model, page => Url.Action("/SPLoai", "SanPham", new { id = Model.ElementAt(0).MaLoai, page }))
+        </ul>
+    </div><!--features_items-->
+</div>
+
+<style>
+    img.fd {
+        height: 225px;
+        width: 242px;
+    }
+</style>
