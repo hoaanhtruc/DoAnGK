@@ -214,7 +214,7 @@
     <Compile Include="Areas\Admin\Models\NhaSX.cs" />
     <Compile Include="Areas\Admin\Models\SP.cs" />
     <Compile Include="Areas\Admin\NhaSXController.cs" />
-    <Compile Include="Areas\Admin\SanPhamController.cs" />
+    <Compile Include="Areas\Admin\AdminSanPhamController.cs" />
     <Compile Include="Controllers\DanhSachController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SanPhamController.cs" />
@@ -264,16 +264,15 @@
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_Layout0.cshtml" />
     <Content Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\AdminHome\Create.cshtml" />
     <Content Include="Areas\Admin\Views\NhaSX\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\SanPham\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\SanPham\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\NhaSX\index.cshtml" />
-    <Content Include="Areas\Admin\Views\SanPham\Index.cshtml" />
     <Content Include="Areas\Admin\Views\NhaSX\Create.cshtml" />
     <Content Include="Areas\Admin\Views\LoaiSP\Create.cshtml" />
     <Content Include="Areas\Admin\Views\LoaiSP\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\LoaiSP\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminSanPham\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminSanPham\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminSanPham\Edit.cshtml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

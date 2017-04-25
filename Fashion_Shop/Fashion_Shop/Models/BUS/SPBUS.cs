@@ -44,7 +44,7 @@ namespace MobiShopBus.Models.BUS
         {
             var db = new FashionShopConectionDB();
 
-            return db.Query<SanPham>("SELECT Top 10 * FROM SanPham ORDER BY idSP DESC").ToList();
+            return db.Query<SanPham>("SELECT Top 12 * FROM SanPham ORDER BY idSP DESC").ToList();
         }
         public static List<SanPham> LoadDSLoaiSP(int lsp)
         {
@@ -53,5 +53,11 @@ namespace MobiShopBus.Models.BUS
             return db.Query<SanPham>("SELECT * FROM SanPham Where MaLoai =@0 ORDER BY idSP DESC", lsp).ToList();
         }
 
+        public static List<SanPham> LoadTop3SP()
+        {
+            var db = new FashionShopConectionDB();
+
+            return db.Query<SanPham>("SELECT Top 3 * FROM SanPham ORDER BY idSP ASC").ToList();
+        }
     }
 }

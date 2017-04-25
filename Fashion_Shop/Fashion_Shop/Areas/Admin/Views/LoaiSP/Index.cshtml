@@ -1,4 +1,6 @@
-﻿@model IEnumerable<FashionShopConection.LoaiSanPham>
+﻿@model PagedList.IPagedList<FashionShopConection.LoaiSanPham>
+@using PagedList.Mvc;
+
 
 @{
     ViewBag.Title = "Index";
@@ -13,10 +15,12 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.idLoai)
+            @Html.DisplayName("ID Loại")
+            @*@Html.DisplayNameFor(model => Model.ElementAt(0).idLoai)*@
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TenLoai)
+            @Html.DisplayName("TênLoại")
+            @*@Html.DisplayNameFor(model => Model.ElementAt(0).TenLoai)*@
         </th>
         <th></th>
     </tr>
@@ -38,3 +42,6 @@
 }
 
 </table>
+<div>
+    @Html.PagedListPager(Model, page => Url.Action("/index", "LoaiSP", new { page }))
+</div>

@@ -1,4 +1,5 @@
 ﻿using MobiShopBus.Models.BUS;
+using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,13 @@ namespace Fashion_Shop.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
 
-            return View(SPBUS.LoadTop10SP());
+            var LstDS = SPBUS.LoadTop10SP();
+            int pageSize = 12;
+            int pageNumber = (page ?? 1);
+            return View(LstDS.ToPagedList(pageNumber, pageSize));
         }
 
         public ActionResult About()

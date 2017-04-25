@@ -1,0 +1,84 @@
+﻿@model PagedList.IPagedList<FashionShopConection.SanPham>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout0.cshtml";
+}
+
+<h2>Danh Sách Sản Phẩm</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("ID")
+            @*@Html.DisplayNameFor(model => Model.ElementAt(0).idSP)*@
+        </th>
+        <th>
+            @Html.DisplayName("Tên SP")
+            @*@Html.DisplayNameFor(model => Model.ElementAt(0).TenSP)*@
+        </th>
+        <th>
+            @Html.DisplayName("Giá SP")
+        </th>
+        <th>
+            @Html.DisplayName("Hình Ảnh")
+        </th>
+        <th>
+            @Html.DisplayName("Mô Tả")
+        </th>
+        <th>
+            @Html.DisplayName("Mã Loại")
+        </th>
+        <th>
+            @Html.DisplayName("Mã NSX")
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idSP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenSP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaSP)
+            </td>
+
+            <td>
+                <img src="@item.HinhAnh" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MoTa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaLoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNSX)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.idSP }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.idSP })
+            </td>
+        </tr>
+    }
+
+</table>
+<div >
+
+    @Html.PagedListPager(Model, page => Url.Action("/index", "AdminSanPham", new { page }))
+</div>
+
+<style>
+    img {
+        width: 75px;
+        height: 125px;
+    }
+</style>

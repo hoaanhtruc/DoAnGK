@@ -4,6 +4,8 @@ using MobiShopBus.Models.BUS;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using PagedList;
+using PagedList.Mvc;
 using System.Web;
 using System.Web.Mvc;
 
@@ -12,9 +14,12 @@ namespace Fashion_Shop.Areas.Admin
     public class NhaSXController : Controller
     {
         // GET: Admin/NhaSX
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
-            return View(NSXBUS.DanhSach());
+            var LstDS = NSXBUS.DanhSach();
+            int pageSize = 12;
+            int pageNumber = (page ?? 1);
+            return View(LstDS.ToPagedList(pageNumber, pageSize));
         }
 
         // GET: Admin/NhaSX/Details/5

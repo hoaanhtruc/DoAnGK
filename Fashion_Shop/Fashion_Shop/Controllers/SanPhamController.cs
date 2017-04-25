@@ -33,5 +33,9 @@ namespace Fashion_Shop.Controllers
             
             return View(ChiTietSPBUS.LoadSP(id));
         }
+        public ActionResult Item(int id)
+        {
+            return View(SPBUS.LoadTop3SP());
+        }
     }
 }

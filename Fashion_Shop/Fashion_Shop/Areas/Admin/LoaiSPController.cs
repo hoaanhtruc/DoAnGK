@@ -1,6 +1,7 @@
 ﻿using Fashion_Shop.Areas.Admin.Models;
 using FashionShopConection;
 using MobiShopBUS.Models.BUS;
+using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,12 @@ namespace Fashion_Shop.Areas.Admin
     public class LoaiSPController : Controller
     {
         // GET: Admin/LoaiSP
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
-            return View(LoaiSPBUS.LoadDSLoaiSP());
+            var LstDS = LoaiSPBUS.LoadDSLoaiSP();
+            int pageSize = 12;
+            int pageNumber = (page ?? 1);
+            return View(LstDS.ToPagedList(pageNumber, pageSize));
         }
 
         // GET: Admin/LoaiSP/Details/5
